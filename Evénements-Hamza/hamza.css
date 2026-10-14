@@ -151,18 +151,19 @@ main{
           }
 
           #shaps-spn{
-            padding: 1em;
-            height: 100%;
-            width: 100%;
+            /* padding: 1em; */
+            /* height: 100%; */
+            /* width: fit-content; */
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
+            gap: 0.6em;
 
 
             #up-rec{
               height: 1.7em;
-              width: 10em;
+              width: 8em;
               border-radius: 5px;
               background-color: #C2410C;
             }
@@ -171,9 +172,8 @@ main{
               width: 20em;
               display: flex;
               flex-direction: row;
-              justify-content: ;
-
               gap: 1em;
+
               #left-square{
                 height: 3em;
                 width: 3em;
@@ -185,22 +185,22 @@ main{
                 width: 3em;
                 background-color: #0F766E;
                 border-radius: 5px;
-
               }
               #right-squares{
+                height: auto;
                 display: flex;
                 flex-direction: column;
-                
-                gap: 2px;
+                /* justify-content: ; */
+                gap: 5px;
 
                 #yellow-rec{
-                height: 1.4em;
+                height: 1.1em;
                 width: 3em;
                 background-color: #FFEDD5;
                 border-radius: 5px;
                 }
                 #grey-rec{
-                height: 1.4em;
+                height: 1.1em;
                 width: 3em;
                 background-color: #E7E5E4;
                 border-radius: 5px;
@@ -219,6 +219,6 @@ main{
     }
   }
 }
-.main-cards{
+/* .main-cards{
   
-}
+} */
