@@ -14,7 +14,10 @@
   font-family: DM-sans-regular;
   src: url("./fonts/DMSans_18pt-Regular.ttf");
 }
-
+@font-face {
+  font-family:anass-font ;
+  src: url("./fonts/BricolageGrotesque_24pt-Bold.ttf");
+}
 *{
   margin: 0;
   padding: 0;
@@ -101,15 +104,19 @@ main{
       font-weight: normal;
       margin-bottom: 1em;
     }
-    #Atelier-card{
+    .main-cards{
       height: 30em;
+      width: 20em;
       border-radius: 1em;
       border: solid 1px #e7dddd;
+      display: flex;
+      flex-direction: column;
 
-      #up-upper-Atelier-div{
+      .cards-upper-div{
         background-color: #FFEDD5;
         border-radius: 1em 1em 0 0;
-        padding: 1.5em 2em ;
+        padding: 1.5em 2em ; 
+        width: 20em;
         display: flex;
         justify-content: center;
 
@@ -119,6 +126,8 @@ main{
           width: 13em;
           border-radius: 1em;
           background-color: #FFFFFF;
+          justify-content: center;
+          align-items: center;
 
           #dottes-spn{
             height: 1.5em;
@@ -151,29 +160,25 @@ main{
           }
 
           #shaps-spn{
-            padding: 1em;
-            height: 100%;
-            width: 100%;
+            padding: 5%;
             display: flex;
+            align-items: center;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-
-
+            
             #up-rec{
               height: 1.7em;
               width: 10em;
               border-radius: 5px;
               background-color: #C2410C;
+              margin-bottom: 0.5em;
             }
             #low-squars{
               height: 50%;
-              width: 20em;
               display: flex;
               flex-direction: row;
-              justify-content: ;
+              gap: 0.5em;
 
-              gap: 1em;
               #left-square{
                 height: 3em;
                 width: 3em;
@@ -190,8 +195,7 @@ main{
               #right-squares{
                 display: flex;
                 flex-direction: column;
-                
-                gap: 2px;
+                gap: 0.3em;
 
                 #yellow-rec{
                 height: 1.4em;
@@ -216,9 +220,23 @@ main{
         }
       }
 
+      .cards-lower-div{
+        border-radius: 1em 1em 0 0;
+        padding: 1.5em 2em ; 
+        width: 20em;
+        .Badge{
+          color: #9A3412;
+          background-color: #FFEDD5;
+          border-radius: 20px;
+          height: 2em;
+          width: 5rem;
+          
+
+        }
+      }
+
+
+
     }
   }
-}
-.main-cards{
-  
 }
