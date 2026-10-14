@@ -4,44 +4,96 @@
     box-sizing: border-box;
 } 
 body{
+    margin: 0;
     background-color: white;
     color: black;
 }
 .header{
     padding: 20px 50px;
-    background-color: rgb(244, 208, 160);
+    background-color: white;
 }
 .page-title{
-    background-color: rgb(173, 243, 243);
+    background-color: rgb(243, 229, 204);
     padding: 40px 50px;
 }
 .page-title h1{
     font-size: 25px;
-    color: rgb(174, 245, 221);
+    color: black;
     margin-bottom: 10px;
 }
-.Intervenants-section {
-    padding: 40px 50px;
-    background-color: rgb(158, 158, 243);
+.speakers {
+    padding: 25px 12px;
+    background-color: white;
+}
+.speakers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.speakers-card {
+    width: 30%;
+    box-sizing: border-box;
 }
 
-.Intervenants-section h2 {
-    margin-bottom: 20px;
-    color: #2c3e50;
+.speakers-list .speakers-card img {
+    display: block;
+    width: 75px ;
+    height: 75px ;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 0 0 12px;
 }
-.cards-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30%;
-}
+
 .partenaires-section{
+    display: block;
     padding: 40px 50px;
-    background-color: rgb(110, 110, 161);
+    background-color: white;
+    color: #222;
+    font-family: Arial, sans-serif;
+
 }
-.tuiles-list{
+.partenaires-description {
+    margin: 0 0 28px;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+.partenaires-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+}
+
+.partenaires-list .partenaire-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    padding: 20px 10px;
+    background-color: white;
+    border: 1px solid #e8e5e2;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+.partenaire-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    background-color: #5b5854;
+    border-radius: 5px;
 }
 .footer{
     background-color: blueviolet;
