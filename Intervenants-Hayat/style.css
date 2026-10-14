@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: white;
+    color: black;
+}
+.header{
+    padding: 20px 50px;
+    background-color: rgb(244, 208, 160);
+}
+.page-title{
+    background-color: rgb(173, 243, 243);
+    padding: 40px 50px;
+}
+.page-title h1{
+    font-size: 25px;
+    color: rgb(174, 245, 221);
+    margin-bottom: 10px;
+}
+.Intervenants-section {
+    padding: 40px 50px;
+    background-color: rgb(158, 158, 243);
+}
+
+.Intervenants-section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30%;
+}
+.partenaires-section{
+    padding: 40px 50px;
+    background-color: rgb(110, 110, 161);
+}
+.tuiles-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer{
+    background-color: blueviolet;
+    padding: 40px 50px;
+}
