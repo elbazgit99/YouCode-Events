@@ -9,31 +9,33 @@ body{
     color: black;
 }
 .header{
-    padding: 20px 50px;
+    padding: 15px 20px;
     background-color: white;
 }
 .page-title{
     background-color: rgb(243, 229, 204);
-    padding: 40px 50px;
+    padding: 25px 20px;
 }
 .page-title h1{
-    font-size: 25px;
+    font-size: 24px;
     color: black;
     margin-bottom: 10px;
 }
 .speakers {
-    padding: 25px 12px;
+    padding: 25px 20px;
     background-color: white;
 }
 .speakers-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
     gap: 20px;
 }
 .speakers-card {
-    width: 30%;
-    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .speakers-list .speakers-card img {
@@ -44,21 +46,20 @@ body{
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    margin: 0 0 12px;
+    margin: 12px;
 }
 
 .partenaires-section{
     display: block;
     padding: 40px 50px;
     background-color: white;
-    color: #222;
-    font-family: Arial, sans-serif;
+    color: black;
 
 }
 .partenaires-description {
     margin: 0 0 28px;
     font-size: 13px;
-    color: #666;
+    color: rgb(117, 109, 93);
     line-height: 1.5;
 }
 .partenaires-list {
@@ -66,7 +67,7 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
-    gap: 40px;
+    gap: 60px;
     width: 100%;
 }
 
@@ -79,7 +80,6 @@ body{
     min-width: 0;
     padding: 20px 10px;
     background-color: white;
-    border: 1px solid #e8e5e2;
     border-radius: 7px;
     box-sizing: border-box;
     font-size: 12px;
@@ -91,11 +91,10 @@ body{
     display: inline-block;
     width: 18px;
     height: 18px;
-    flex-shrink: 0;
-    background-color: #5b5854;
+    background-color: rgb(99, 89, 75);
     border-radius: 5px;
 }
 .footer{
-    background-color: blueviolet;
-    padding: 40px 50px;
+    background-color: black;
+    padding: 50px 50px;
 }
