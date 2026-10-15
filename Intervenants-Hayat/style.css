@@ -102,3 +102,160 @@ body{
     background-color: black;
     padding: 50px 50px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header {
+        padding: 20px 30px;
+    }
+    .page-title {
+        padding: 35px 30px;
+    }
+
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .speakers {
+        padding: 30px;
+    }
+
+    .speakers-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .speakers-card {
+        width: auto;
+        flex: 0 0 calc(50% - 10px);
+        min-width: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .speakers-list .speakers-card img {
+        width: 75px;
+        height: 75px;
+        margin: 10px 0;
+    }
+
+    .partenaires-section {
+        padding: 30px;
+    }
+
+    .partenaires-description {
+        margin: 15px 0 20px;
+        font-size: 15px;
+    }
+
+    .partenaires-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .partenaires-card {
+        width: auto;
+        flex: 0 0 calc(50% - 8px);
+        min-width: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 12px;
+        box-sizing: border-box;
+    }
+
+    .partenaire-icon {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+    }
+
+    .footer {
+        padding: 35px 30px;
+    }
+
+}
+@media screen and (min-width: 1025px) {
+    .header{
+        padding: 20px 50px;
+    }
+    .page-title {
+        padding: 40px 50px;
+    }
+
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .speakers {
+        padding: 40px 50px;
+    }
+    .speakers-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .speakers-card {
+        width: auto;
+        flex: 0 0 30%;
+        min-width: 0;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+    .speakers-list .speakers-card img {
+        width: 85px;
+        height: 85px;
+        margin: 0 0 15px;
+    }
+    .partenaires-section {
+        padding: 40px 50px;
+    }
+
+    .partenaires-description {
+        margin: 15px 0 25px;
+        font-size: 15px;
+    }
+
+    .partenaires-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .partenaires-card {
+        width: auto;
+        flex: 1 1 0;
+        min-width: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding: 24px 20px;
+        box-sizing: border-box;
+    }
+
+    .partenaire-icon {
+        width: 25px;
+        height: 25px;
+        flex-shrink: 0;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+}
