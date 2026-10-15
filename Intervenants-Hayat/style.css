@@ -25,6 +25,9 @@ body{
     padding: 25px 20px;
     background-color: white;
 }
+.speakers-list h4{
+    color: rgb(201, 89, 48);
+}
 .speakers-list {
     display: flex;
     flex-direction: column;
@@ -51,13 +54,13 @@ body{
 
 .partenaires-section{
     display: block;
-    padding: 40px 50px;
+    padding: 25px 20px;
     background-color: white;
     color: black;
 
 }
 .partenaires-description {
-    margin: 0 0 28px;
+    margin: 20px;
     font-size: 13px;
     color: rgb(117, 109, 93);
     line-height: 1.5;
@@ -65,35 +68,36 @@ body{
 .partenaires-list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    gap: 60px;
+    flex-wrap: wrap;
+    gap: 16px;
     width: 100%;
+    padding: 12px;
 }
 
-.partenaires-list .partenaire-card {
+ .partenaires-card {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
-    flex: 1;
-    min-width: 0;
+    justify-content: flex-start;
+    gap: 10px;
+    width: calc(50% - 8px);
     padding: 20px 10px;
-    background-color: white;
-    border-radius: 7px;
     box-sizing: border-box;
-    font-size: 12px;
-    white-space: nowrap;
+    border-radius: 8px;
+    border: 1px solid rgb(71, 71, 61);
+    background-color: rgb(248, 248, 238);
 }
-
 
 .partenaire-icon {
     display: inline-block;
-    width: 18px;
-    height: 18px;
-    background-color: rgb(99, 89, 75);
-    border-radius: 5px;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #48483f;
+
 }
+
 .footer{
     background-color: black;
     padding: 50px 50px;
