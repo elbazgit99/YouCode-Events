@@ -119,44 +119,13 @@ span{
   display: inline-block;
 }
 
-header{
-  height: 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-
-  #logo1{
-    font-family: "Bricolage-Grotesque-semi-bold";
-  }
-  #logo2{
-    color: #C2410C;
-    font-family: "Bricolage-Grotesque-semi-bold";
-
-  }
-  nav{
-    
-    button{
-      font-family: "DM-sans-semi-bold";
-      background-color: #C2410C;
-      color: #FFFFFF;
-      border: none;
-      height: 2em;
-      width: 7em;
-      border-radius: 5px;
-    }
-  }
-  svg{
-    color: #1C1917;
-  }
-}
 
 main{
   #hero-sec{
     background-color: #FFEDD5;
-    height: 15em;
-    padding:2em 1em;
+    height: 15rem;
+    padding:5rem 3rem 3rem 1rem;
+    width: 100%;
   
     h1{
       font-family: "Bricolage-Grotesque-bold";
@@ -181,10 +150,9 @@ main{
       }
     }
     #cards-div{
-      display: flex;
-      flex-direction: column;
-      row-gap: 1.5rem;
-      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
       
     }
     
@@ -306,16 +274,5 @@ main{
   }
 
 
-
-@media screen and (min-width : 375px) {
-
-    #cards-section{
-    padding: 5rem 50rem;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-}
 
 
