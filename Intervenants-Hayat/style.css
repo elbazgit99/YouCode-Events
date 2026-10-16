@@ -19,7 +19,7 @@ body{
 .page-title h1{
     font-size: 24px;
     color: black;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 .speakers {
     padding: 25px 20px;
@@ -38,7 +38,7 @@ body{
     min-width: 0;
     padding: 15px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(243, 234, 234);
 }
 
 .speakers-list .speakers-card img {
@@ -85,7 +85,7 @@ body{
     box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid rgb(71, 71, 61);
-    background-color: rgb(248, 248, 238);
+    background-color: rgb(243, 234, 234);
 }
 
 .partenaire-icon {
@@ -94,20 +94,13 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 8px;
-    background-color: #48483f;
+    background-color: rgb(186, 166, 166);
 
 }
 
-.footer{
-    background-color: black;
-    padding: 50px 50px;
-}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-    .header {
-        padding: 20px 30px;
-    }
     .page-title {
         padding: 35px 30px;
     }
@@ -138,7 +131,6 @@ body{
     .speakers-list .speakers-card img {
         width: 75px;
         height: 75px;
-        margin: 10px 0;
     }
 
     .partenaires-section {
@@ -161,16 +153,17 @@ body{
     }
 
     .partenaires-card {
-        width: auto;
-        flex: 0 0 calc(50% - 8px);
-        min-width: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
+        width: auto;
+        flex: 0 0 calc(50% - 8px);
+        min-width: 0;
         gap: 10px;
         padding: 20px 12px;
         box-sizing: border-box;
     }
+
 
     .partenaire-icon {
         width: 25px;
@@ -178,15 +171,9 @@ body{
         flex-shrink: 0;
     }
 
-    .footer {
-        padding: 35px 30px;
-    }
 
 }
-@media screen and (min-width: 1025px) {
-    .header{
-        padding: 20px 50px;
-    }
+@media screen and (min-width: 1024px) {
     .page-title {
         padding: 40px 50px;
     }
@@ -252,10 +239,6 @@ body{
         width: 25px;
         height: 25px;
         flex-shrink: 0;
-    }
-
-    .footer {
-        padding: 50px;
     }
 
 }
