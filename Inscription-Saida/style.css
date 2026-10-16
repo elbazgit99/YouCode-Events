@@ -176,7 +176,6 @@ textarea{
         flex-wrap: nowrap;
         gap: 16px;
     }
-
     #email-tel{
         display: flex;
         flex-direction: row;
@@ -196,4 +195,5 @@ textarea{
         height: 120px;
     }
 }
-
+@media screen and (min-width:1440px) {
+}
