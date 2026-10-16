@@ -11,7 +11,7 @@
         <section id="section1">
             <div>
                 <h1>Inscription</h1>
-                <p id="paragraphe1">Réservez votre place à un atelier, une <br> conférence, un hackathon ou une <br> rencontre. L'inscription est gratuite.</p>
+                <p id="paragraphe1">Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
             </div>
         </section>
         <section id="section2">
@@ -21,18 +21,26 @@
                         <p>Les champs marqués * sont obligatoires.</p>
                     </div>
                     <div id="nom-prenom">
-                        <label for="nom">Nom *</label>
-                        <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                        <div>
+                            <label for="nom">Nom *</label>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div>
                         <label for="prenom">Prénom *</label>
                         <input type="text" name="prenom" id="prenom" class="prenom" placeholder="Salma" required>
                         <p>Champ valide.</p>
+                        </div>
                     </div>
                     <div id="email-tel">
-                        <label for="email">Adresse e-mail *</label>
-                        <input type="email" name="email" id="email" placeholder="salma@exemple" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
-                        <p id="Erreur-email">Erreur : saisissez une adresse valide, par exemple nom@domaine.ma.</p>
-                        <label for="telephone">Téléphone</label>
-                        <input type="tel" name="telephone" id="telephone" maxlength="10" minlength="10" placeholder="06 12 34 56 78" required>
+                        <div>                        
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" name="email" id="email" placeholder="salma@exemple" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                            <p id="Erreur-email">Erreur : saisissez une adresse valide, par exemple nom@domaine.ma.</p>  
+                        </div>
+                        <div>
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" name="telephone" id="telephone" maxlength="10" minlength="10" placeholder="06 12 34 56 78" required>
+                        </div>
                     </div>
                     <div class="événement">
                         <label for="événement">Événement choisi *</label>
@@ -61,18 +69,26 @@
                     <div id="niveau">
                         <fieldset>
                             <legend>Niveau *</legend>
-                            <input type="radio" id="Débutant" name="niveau" value="Débutant">Débutant
-                            <input type="radio"  id="Intermédiaire" name="niveau" value="Intermédiaire">Intermédiaire
-                            <input type="radio"  id="Avancé" name="niveau" value="Avancé">Avancé
+                            <div class="radio">
+                                <div>
+                                    <input type="radio" id="Débutant" name="niveau" value="Débutant">Débutant
+                                </div>
+                                <div>
+                                    <input type="radio"  id="Intermédiaire" name="niveau" value="Intermédiaire">Intermédiaire
+                                </div>
+                                <div>
+                                    <input type="radio"  id="Avancé" name="niveau" value="Avancé">Avancé
+                                </div>
+                            </div>
                         </fieldset>
                     </div>
-                    <div id="message">
-                        <label for="massage">Message (facultatif)</label>
+                    <div id="messagee">
+                        <label for="Message">Message (facultatif)</label>
                         <textarea name="Message" id="Message" placeholder="Vos attentes, vos questions…"></textarea>
                     </div>
-                    <div id="accepte">
+                    <div id="acceptee">
                         <input type="checkbox" name="accepte" id="accepte" required>
-                        <label for="accepte">J'accepte que mes données servent <br>à gérer mon inscription. *</label>
+                        <label for="accepte">J'accepte que mes données servent à gérer mon inscription. *</label>
                     </div>
                     <div>
                         <button type="submit">Valider mon inscription</button>
