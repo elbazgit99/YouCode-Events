@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <main>
+        <section id="section1">
+            <div>
+                <h1>Inscription</h1>
+                <p id="paragraphe1">Réservez votre place à un atelier, une conférence, un hackathon ou une rencontre. L'inscription est gratuite.</p>
+            </div>
+        </section>
+        <section id="section2">
+                <form class="form">
+                    <div id="En-tête-du-formulaire">
+                        <h1>Vos informations</h1>
+                        <p>Les champs marqués * sont obligatoires.</p>
+                    </div>
+                    <div id="nom-prenom">
+                        <div>
+                            <label for="nom">Nom *</label>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                        </div>
+                        <div>
+                        <label for="prenom">Prénom *</label>
+                        <input type="text" name="prenom" id="prenom" class="prenom" placeholder="Salma" required>
+                        <p>Champ valide.</p>
+                        </div>
+                    </div>
+                    <div id="email-tel">
+                        <div>                        
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" name="email" id="email" placeholder="salma@exemple" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                            <p id="Erreur-email">Erreur : saisissez une adresse valide, par exemple <br>nom@domaine.ma.</p>  
+                        </div>
+                        <div>
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" name="telephone" id="telephone" maxlength="10" minlength="10" placeholder="06 12 34 56 78" required>
+                        </div>
+                    </div>
+                    <div class="événement">
+                        <label for="événement">Événement choisi *</label>
+                        <select name="événement" id="événement" required>
+                            <option value="" disabled selected>Choisir un événement</option>
+                            <option value="Atelier Flexbox et CSS Grid">Atelier Flexbox et CSS Grid</option>
+                            <option value="Accessibilité Web : par où commencer ?">Accessibilité Web : par où commencer ?</option>
+                            <option value="Hackathon Green Code">Hackathon Green Code</option>
+                            <option value="Rencontre avec des développeurs front-end">Rencontre avec des développeurs front-end</option>
+                            <option value="Atelier Git Flow en pratique">Atelier Git Flow en pratique</option>
+                            <option value="Du design au code : travailler avec Figma">Du design au code : travailler avec Figma</option>
+                        </select>
+                    </div>
+                    <!-- <div>
+                        <p>Niveau *</p>
+                        <label for="Débutant">
+                            <input type="radio" id="Débutant" name="Niveau" value="Débutant">Débutant
+                        </label>
+                        <label for="Intermédiaire">
+                            <input type="radio" id="Intermédiaire" name="Niveau" value="Intermédiaire">Intermédiaire
+                        </label>
+                        <label for="Avancé">
+                            <input type="radio" id="Avancé" name="Niveau" value="Avancé">Avancé
+                        </label>
+                    </div> -->
+                    <div id="niveau">
+                        <fieldset>
+                            <legend>Niveau *</legend>
+                            <div class="radio">
+                                <div>
+                                    <input type="radio" id="Débutant" name="niveau" value="Débutant">Débutant
+                                </div>
+                                <div>
+                                    <input type="radio"  id="Intermédiaire" name="niveau" value="Intermédiaire">Intermédiaire
+                                </div>
+                                <div>
+                                    <input type="radio"  id="Avancé" name="niveau" value="Avancé">Avancé
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="messagee">
+                        <label for="Message">Message (facultatif)</label>
+                        <textarea name="Message" id="Message" placeholder="Vos attentes, vos questions…"></textarea>
+                    </div>
+                    <div id="acceptee">
+                        <input type="checkbox" name="accepte" id="accepte" required>
+                        <label for="accepte">J'accepte que mes données servent à gérer mon inscription. *</label>
+                    </div>
+                    <div>
+                        <button type="submit">Valider mon inscription</button>
+                    </div>
+                </form>
+        </section>
+    </main>
+</body>
+</html>
